@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.achievements {
+  background-color: #f5f7fa;
+
+  &__content {
+    padding: 64px 100px;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f7fa;
+    max-width: 1440px;
+  margin: 0px auto;
+
+    &__right {
+      width: 540px;
+    }
+
+    &__left {
+      &--heading1,
+      &--heading2 {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+      }
+
+      &--heading2 {
+        color: #4caf4f;
+      }
+
+      &--paragraph {
+        margin-top: 10px;
+      }
+    }
+
+    &__right {
+      &__row2 {
+        margin-top: 20px;
+      }
+
+      &__row1,
+      &__row2 {
+        display: flex;
+        justify-content: stretch;
+
+        &__members,
+        &__clubs,
+        &__booking,
+        &__payments {
+          display: flex;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}

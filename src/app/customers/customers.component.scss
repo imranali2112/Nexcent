@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.customers {
+  background-color: #f5f7fa;
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    padding: 26px 100px;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0px auto;
+    &__left {
+      &--image {
+        width: 326px;
+        height: 326px;
+      }
+    }
+
+    &__right {
+      width: 748px;
+
+      &--name {
+        line-height: 19px;
+        font-weight: 600;
+        color: #4caf4f;
+        margin-top: 17px;
+      }
+
+      &--short-para {
+        margin-top: 10px;
+      }
+      &__logo-images {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        &--customer-link {
+          color: #4caf4f;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

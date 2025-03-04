@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  max-width: 1440px;
+  margin: 0px auto;
+}
+.client {
+  padding: 66.82px 100.23px;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--heading {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 44px;
+    }
+
+    &--paragraph {
+      margin-top: 10px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}
