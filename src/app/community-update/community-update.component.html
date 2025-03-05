@@ -8,17 +8,18 @@
     </div>
 
     <div class="cummunity-updates__right">
+        @for(data of communityCards; track data){
         <div class="cummunity-updates__right__card1">
-            <img class="cummunity-updates__right__card1--first-img" src="assets/images/updatesImage1.svg" alt="">
+            <img class="cummunity-updates__right__card1--first-img" src="{{data.CommunityImage}}" alt="">
             <div class="cummunity-updates__right__card1__paragraph1">
-                <p class="">Creating Streamlined Safeguarding Processes with
-                    OneRen</p>
+                <p class="">{{data.CommunityTitle}}</p>
                 <div class="cummunity-updates__right__card1__paragraph1--read-more-link1">
                     <h4>Read More</h4> <img src="assets/images/greenArow.svg" alt="">
                 </div>
             </div>
         </div>
-        <div class="cummunity-updates__right__card2">
+        }
+        <!-- <div class="cummunity-updates__right__card2">
             <img class="cummunity-updates__right__card2--second-img" src="assets/images/updatesImage2.svg" alt="">
             <div class="cummunity-updates__right__card2__paragraph2">
                 <p>What are your safeguarding responsibilities and
@@ -39,8 +40,7 @@
                 <div class="cummunity-updates__right__card3__paragraph3--read-more-link3">
                     <h4>Read More</h4> <img src="assets/images/greenArow.svg" alt="">
                 </div>
-
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

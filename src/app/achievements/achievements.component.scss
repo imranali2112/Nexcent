@@ -44,6 +44,10 @@
       &__row2 {
         margin-top: 20px;
       }
+      &__row1{
+        margin-left: 128px;
+        gap: 33px;
+      }
 
       &__row1,
       &__row2 {
@@ -51,11 +55,9 @@
         justify-content: stretch;
 
         &__members,
-        &__clubs,
-        &__booking,
-        &__payments {
+        &__booking {
           display: flex;
-          gap: 20px;
+          gap: 40px;
         }
       }
     }

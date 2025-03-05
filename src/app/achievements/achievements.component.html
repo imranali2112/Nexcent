@@ -1,23 +1,41 @@
 <div class="achievements">
     <div class="achievements__content">
         <div class="achievements__content__left">
-            <h2 class="achievements__content__left--heading1">Helping a locals data</h2>
-            <h2 class="achievements__content__left--heading2">business reinvent itself</h2>
-            <p class="achievements__content__left--paragraph">We reached here with our hard work and dedication</p>
+            <h2 class="achievements__content__left--heading1">
+                Helping a locals data
+            </h2>
+            <h2 class="achievements__content__left--heading2">
+                business reinvent itself
+            </h2>
+            <p class="achievements__content__left--paragraph">
+                We reached here with our hard work and dedication
+            </p>
         </div>
 
         <div class="achievements__content__right">
             <div class="achievements__content__right__row1">
                 @for(data of achievementsData; track data){
-                <div class="achievements__content__right__row1__members">
-                    <img src="{{data.image}}" alt="">
-                    <div class="achievements__content__right__row1__members--member-data">
-                        <h3>{{data.members}}</h3>
-                        <p>{{data.achievementsName}}</p>
+                    <div class="achievements__content__right__row1__members">
+                        <img src="{{ data.image }}" alt="" />
+                        <div class="achievements__content__right__row1__members--member-data">
+                            <h3>{{ data.members }}</h3>
+                            <p>{{ data.achievementsName }}</p>
+                        </div>
                     </div>
-                </div>
                 }
             </div>
-        </div>
+        
+            <div class="achievements__content__right__row2">
+                @for(data of achievementsData; track data){
+                    <div class="achievements__content__right__row2__booking">
+                        <img src="{{ data.imagee }}" alt="" />
+                        <div class="achievements__content__right__row2__booking--booking-data">
+                            <h3>{{ data.memberss }}</h3>
+                            <p>{{ data.achievementsNamee }}</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>        
     </div>
 </div>
